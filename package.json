@@ -1,0 +1,62 @@
+{
+  "author": "Alberto Terragni",
+  "bugs": {
+    "url": "https://github.com/ninjabachelor/barlafus/issues"
+  },
+  "dependencies": {},
+  "description": "Barlafus static blog generator",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "flow-copy-source": "^1.1.0",
+    "jest-cli": "^18.1.0"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "files": [
+    "lib",
+    "settings",
+    "yarn.lock"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "keywords": [
+    "barlafus",
+    "static",
+    "blog",
+    "generator"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "name": "barlafus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninjabachelor/barlafus"
+  },
+  "scripts": {
+    "build": "npm run build:dir && npm run build:lib",
+    "build:dir": "rm -rf lib && mkdir lib",
+    "build:lib": "babel src -d lib",
+    "build:lib:watch": "babel -w src -d lib",
+    "eslint": "eslint src",
+    "eslint:fix": "eslint --fix src",
+    "flow-copy-source": "flow-copy-source src lib",
+    "prepublish": "npm run build && npm run flow-copy-source",
+    "test": "jest --coverage"
+  },
+  "version": "0.0.1"
+}

@@ -1,2 +1,3 @@
-# barlafus
-Barlafus static blog generator
+# Barlafus
+Static blog generator.
+Project under development.
