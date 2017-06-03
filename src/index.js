@@ -1,9 +1,4 @@
-/**
- * Static blog generator
- * @module Barlafus
- * @flow
- */
-
+// @flow
 import path from 'path';
 
 /**
@@ -16,7 +11,7 @@ type SettingsType = {
 
 type BarlafusType = {
   projectDir: string,
-  settings: SettingsType,
+  settings: SettingsType
 };
 
 const Barlafus = {
@@ -86,7 +81,7 @@ const Barlafus = {
    */
   getSettings(): SettingsType {
     return this.settings;
-  },
+  }
 };
 
 module.exports = Barlafus;
