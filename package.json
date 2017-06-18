@@ -3,29 +3,17 @@
   "bugs": {
     "url": "https://github.com/ninjabachelor/barlafus/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "folktale": "^2.0.0-beta1",
+    "ramda": "^0.24.1"
+  },
   "description": "Barlafus static blog generator",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-flow": "^6.23.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-config-prettier": "^2.1.1",
-    "eslint-plugin-flowtype": "^2.34.0",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-prettier": "^2.1.1",
-    "flow-bin": "^0.47.0",
-    "flow-copy-source": "^1.1.0",
     "jest-cli": "^20.0.4",
-    "prettier": "^1.4.1"
+    "prettier": "^1.4.4"
   },
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 8.0.0"
   },
   "files": [
     "lib",
@@ -35,7 +23,7 @@
   "jest": {
     "testEnvironment": "node",
     "collectCoverageFrom": [
-      "src/**/*.js"
+      "lib/**/*.js"
     ]
   },
   "keywords": [
@@ -52,15 +40,8 @@
     "url": "https://github.com/ninjabachelor/barlafus"
   },
   "scripts": {
-    "build": "yarn run build:dir && yarn run build:lib",
-    "build:dir": "rm -rf lib && mkdir lib",
-    "build:lib": "babel src -d lib",
-    "build:lib:watch": "yarn run build:dir && babel -w src -d lib",
-    "eslint": "eslint src __tests__",
-    "eslint:fix": "eslint --fix src __tests__",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
-    "flow-copy-source": "flow-copy-source src lib",
-    "prepublish": "yarn run build && yarn run flow-copy-source",
+    "format": "prettier --single-quote --print-width 120 --write 'lib/**/*.js' '__tests__/**/*.js'",
+    "prepublishOnly": "yarn run format && yarn run test",
     "test": "jest --coverage"
   },
   "version": "0.0.1"
