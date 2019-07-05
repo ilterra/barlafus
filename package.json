@@ -4,13 +4,13 @@
     "url": "https://github.com/ninjabachelor/barlafus/issues"
   },
   "dependencies": {
-    "folktale": "^2.0.0-beta1",
-    "ramda": "^0.24.1"
+    "folktale": "^2.3.2",
+    "ramda": "^0.26.1"
   },
   "description": "Barlafus static blog generator",
   "devDependencies": {
-    "jest-cli": "^20.0.4",
-    "prettier": "^1.4.4"
+    "jest-cli": "^24.8.0",
+    "prettier": "^1.18.2"
   },
   "engines": {
     "node": ">= 8.0.0"
@@ -44,5 +44,5 @@
     "prepublishOnly": "yarn run format && yarn run test",
     "test": "jest --coverage"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
