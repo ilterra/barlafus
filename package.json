@@ -41,7 +41,7 @@
   },
   "scripts": {
     "format": "prettier --single-quote --print-width 120 --write 'lib/**/*.js' '__tests__/**/*.js'",
-    "prepublishOnly": "yarn run format && yarn run test",
+    "prepublishOnly": "npm run format",
     "test": "jest --coverage"
   },
   "version": "0.0.2"
