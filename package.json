@@ -5,15 +5,15 @@
   },
   "dependencies": {
     "folktale": "^2.3.2",
-    "ramda": "^0.26.1"
+    "ramda": "^0.27.0"
   },
   "description": "Barlafus static blog generator",
   "devDependencies": {
-    "jest-cli": "^24.9.0",
+    "jest-cli": "^25.1.0",
     "prettier": "^1.19.1"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "files": [
     "lib",
@@ -44,5 +44,5 @@
     "prepublishOnly": "npm run format",
     "test": "jest --coverage"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
