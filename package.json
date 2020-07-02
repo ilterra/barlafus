@@ -9,8 +9,8 @@
   },
   "description": "Barlafus static blog generator",
   "devDependencies": {
-    "jest-cli": "^25.1.0",
-    "prettier": "^1.19.1"
+    "jest-cli": "^26.1.0",
+    "prettier": "^2.0.5"
   },
   "engines": {
     "node": ">= 10.0.0"
