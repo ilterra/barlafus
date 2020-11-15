@@ -5,12 +5,12 @@
   },
   "dependencies": {
     "folktale": "^2.3.2",
-    "ramda": "^0.27.0"
+    "ramda": "^0.27.1"
   },
   "description": "Barlafus static blog generator",
   "devDependencies": {
-    "jest-cli": "^26.1.0",
-    "prettier": "^2.0.5"
+    "jest-cli": "^26.6.3",
+    "prettier": "^2.1.2"
   },
   "engines": {
     "node": ">= 10.0.0"
@@ -40,9 +40,9 @@
     "url": "https://github.com/ninjabachelor/barlafus"
   },
   "scripts": {
-    "format": "prettier --single-quote --print-width 120 --write 'lib/**/*.js' '__tests__/**/*.js'",
+    "format": "prettier --single-quote --print-width 120 --write 'lib/**/*.js'",
     "prepublishOnly": "npm run format",
     "test": "jest --coverage"
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
