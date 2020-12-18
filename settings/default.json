@@ -1,5 +1,0 @@
-{
-    "destination": "build",
-    "source": "src",
-    "test": "test"
-}
