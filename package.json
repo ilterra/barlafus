@@ -1,48 +1,15 @@
 {
   "author": "Alberto Terragni",
   "bugs": {
-    "url": "https://github.com/ninjabachelor/barlafus/issues"
+    "url": "https://github.com/ilterra/barlafus/issues"
   },
-  "dependencies": {
-    "folktale": "^2.3.2",
-    "ramda": "^0.27.1"
-  },
-  "description": "Barlafus static blog generator",
-  "devDependencies": {
-    "jest-cli": "^26.6.3",
-    "prettier": "^2.1.2"
-  },
-  "engines": {
-    "node": ">= 10.0.0"
-  },
-  "files": [
-    "lib",
-    "settings",
-    "yarn.lock"
-  ],
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverageFrom": [
-      "lib/**/*.js"
-    ]
-  },
-  "keywords": [
-    "barlafus",
-    "static",
-    "blog",
-    "generator"
-  ],
+  "description": "npm test package",
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "name": "barlafus",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ninjabachelor/barlafus"
+    "url": "https://github.com/ilterra/barlafus"
   },
-  "scripts": {
-    "format": "prettier --single-quote --print-width 120 --write 'lib/**/*.js'",
-    "prepublishOnly": "npm run format",
-    "test": "jest --coverage"
-  },
-  "version": "0.0.5"
+  "version": "0.0.6"
 }
